@@ -1,0 +1,272 @@
+/* APP COMPONENT */
+.app-container {
+	width: 100%;
+	/* min-height: 100vh; */
+	display: flex;
+	justify-content: center;
+	padding: 10rem;
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+	overflow: auto;
+}
+
+.inner-app-container {
+	width: 100%;
+	height: 100%;
+}
+
+.todo-heading {
+	font-size: 4rem;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 5rem;
+}
+
+.form-container {
+	width: 100%;
+	height: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 5rem;
+}
+
+.buttons-container {
+	width: 60rem;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.buttons-container button {
+	width: 20rem;
+	border: none;
+	padding: 1.5rem 2rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: #fff;
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.all-task {
+	background-color: chocolate;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+}
+
+.active-task {
+	background-color: crimson;
+}
+
+.completed-task {
+	background-color: blueviolet;
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+
+.all-task,
+.active-task,
+.completed-task {
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.all-task.active,
+.active-task.active,
+.completed-task.active {
+	padding: 2.25rem;
+}
+
+.all-task.active {
+	box-shadow: 0px 0px 1rem 0px chocolate;
+	text-shadow: 0px 0px 0.1rem #fff;
+}
+
+.active-task.active {
+	box-shadow: 0px 0px 1rem 0px crimson;
+	text-shadow: 0px 0px 0.1rem #fff;
+}
+
+.completed-task.active {
+	box-shadow: 0px 0px 1rem 0px blueviolet;
+	text-shadow: 0px 0px 0.1rem #fff;
+}
+
+.todo-container {
+	margin: 0 auto;
+	width: 80%;
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.message-paragraph {
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 4rem;
+	color: #fff;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 0.5rem #fff;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+	.app-container {
+		padding: 10rem 7rem;
+	}
+	.message-paragraph {
+		font-size: 3.8rem;
+	}
+}
+
+@media screen and (max-width: 999px) {
+	.app-container {
+		padding: 10rem 5rem;
+	}
+	.form-container input[type="text"] {
+		width: 55rem;
+	}
+	.buttons-container {
+		width: 45rem;
+	}
+	.buttons-container button {
+		width: 15rem;
+		font-size: 1.2rem;
+	}
+	.todo-container {
+		width: 85%;
+	}
+	.message-paragraph {
+		font-size: 3.6rem;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.form-container input[type="text"] {
+		width: 45rem;
+	}
+	.todo-container {
+		width: 88%;
+	}
+	.message-paragraph {
+		font-size: 3.4rem;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.app-container {
+		padding: 10rem 3rem;
+	}
+	.form-container input[type="text"] {
+		width: 40rem;
+	}
+	.buttons-container {
+		width: 39rem;
+	}
+	.buttons-container button {
+		width: 13rem;
+		font-size: 1rem;
+	}
+	.todo-container {
+		width: 90%;
+	}
+	.message-paragraph {
+		font-size: 3.2rem;
+	}
+}
+
+@media screen and (max-width: 570px) {
+	.app-container {
+		padding: 10rem 0rem;
+	}
+	.form-container input[type="text"] {
+		width: 40rem;
+	}
+	.buttons-container {
+		width: 39rem;
+	}
+	.buttons-container button {
+		width: 13rem;
+		font-size: 1rem;
+	}
+	.todo-container {
+		width: 93%;
+	}
+	.message-paragraph {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.app-container {
+		padding: 10rem 0rem;
+	}
+	.form-container input[type="text"] {
+		width: 30rem;
+	}
+	.buttons-container {
+		width: 36rem;
+	}
+	.buttons-container button {
+		width: 12rem;
+		font-size: 0.9rem;
+	}
+	.todo-container {
+		width: 95%;
+	}
+	.message-paragraph {
+		font-size: 2.8rem;
+	}
+}
+
+@media screen and (max-width: 401px) {
+	.app-container {
+		padding: 10rem 0rem;
+	}
+	.form-container input[type="text"] {
+		width: 28rem;
+	}
+	.buttons-container {
+		width: 33rem;
+	}
+	.buttons-container button {
+		width: 11rem;
+		font-size: 0.7rem;
+	}
+	.todo-container {
+		width: 95%;
+	}
+	.message-paragraph {
+		font-size: 2.6rem;
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.app-container {
+		padding: 10rem 0rem;
+	}
+	.form-container input[type="text"] {
+		width: 24rem;
+	}
+	.buttons-container {
+		width: 30rem;
+	}
+	.buttons-container button {
+		width: 10rem;
+		font-size: 0.6rem;
+	}
+	.todo-container {
+		width: 95%;
+	}
+	.message-paragraph {
+		font-size: 2.4rem;
+	}
+}
