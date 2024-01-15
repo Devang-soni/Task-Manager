@@ -1,0 +1,25 @@
+.form-container input[type="text"] {
+	width: 65rem;
+	height: 4rem;
+	outline: none;
+	border: none;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 300;
+	background-color: #434d65;
+	border-top-left-radius: 1rem;
+	border-bottom-left-radius: 1rem;
+	text-transform: capitalize;
+	padding: 2rem;
+}
+
+.add-btn {
+	border: none;
+	height: 4rem;
+	padding: 0.9rem 2rem;
+	color: #fff;
+	background-color: limegreen;
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	font-weight: 700;
+}
