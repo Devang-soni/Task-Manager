@@ -1,0 +1,60 @@
+.todo-item-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	position: relative;
+	border-radius: 1rem;
+}
+
+.todo-item-container input[type="checkbox"] {
+	position: absolute;
+	accent-color: green;
+	width: 20px;
+	left: 2rem;
+}
+
+.todo-item-container input[type="text"] {
+	width: 100%;
+	height: 100%;
+	font-size: 1.5rem;
+	outline: none;
+	border: none;
+	background-color: #ccbad6;
+	border-radius: 1rem;
+	text-transform: capitalize;
+	padding: 1.5rem 3.5rem;
+	transition-property: all;
+	transition-duration: 0.2s;
+	transition-timing-function: ease;
+}
+
+.todo-item-container button {
+	background-color: #fff;
+	position: absolute;
+	padding: 0.5rem;
+	border-radius: 0.75rem;
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+}
+
+.modify-btn {
+	right: 8rem;
+}
+
+.delete-btn {
+	right: 3rem;
+}
+
+.todo-item-container input[type="text"].complete {
+	background-color: lightgreen;
+	text-decoration: line-through;
+}
+
+.todo-item-container input[type="text"]#show-border {
+	border-style: solid;
+	border-width: 1px;
+	border-color: black;
+	border-radius: 1rem;
+}
